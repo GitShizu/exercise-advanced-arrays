@@ -13,5 +13,5 @@ const processNumbers = (array)=>{
     });
     return newArray;
 }
-
-console.log(processNumbers([4,6,18,'x']));
+// Test
+// console.log(processNumbers([4,6,18,'x']));

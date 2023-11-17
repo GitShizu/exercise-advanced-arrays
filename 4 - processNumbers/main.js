@@ -3,12 +3,13 @@
 
 const processNumbers = (array)=>{
     newArray = [];
+    elementNumber = Number(element);
     array.forEach((element, i) => {
-    if(typeof element === 'number'){
-        newArray.push(element*10)        
-    }else{
-        throw new Error(`Invalid numeric value @ index n° ${i}`)  
-    }  
+        if(typeof elementNumber === 'number' || !isNaN(elementNumber)){
+            newArray.push(elementNumber*elementNumber)        
+        }else{
+            throw new Error(`Invalid numeric value @ index n° ${i}`)  
+        }  
 
     });
     return newArray;

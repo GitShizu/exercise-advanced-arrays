@@ -4,18 +4,16 @@
 const safeParseJSON = (string)=>{
     let conversion = true;
     try{
-        const parsedString = JSON.parse(string);        
+        const parsedString = JSON.parse(string); 
+        console.warn('Analisis unsuccessful')       
         return parsedString;
     }catch(error){
-        conversion = false;
+        console.log('Analisis successful');
         return null;
-    }finally{
-        const outcome = (conversion)? 'Analisis successful' : 'Analisis unsuccessful';
-        console.log(outcome);
     }
 }
 
-const testString = `["this", "that", "the other"]`;
 
 // Test
+// const testString = `["this", "that", "the other"]`;
 // console.log(safeParseJSON(testString));

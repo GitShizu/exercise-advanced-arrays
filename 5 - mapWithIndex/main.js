@@ -7,7 +7,7 @@ const mapWithIndex = (array)=>{
     
 
 // Test
-// console.log(mapWithIndex([20, 55, 7]));
+console.log(mapWithIndex([20, 55, 7]));
 
 
 // For Each version:

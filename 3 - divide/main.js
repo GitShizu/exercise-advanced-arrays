@@ -3,7 +3,8 @@
 const divide = (dividend, divisor)=>{
     if(divisor === 0){
         throw new Error("Impossibile dividere per zero") 
-    }else{return dividend / divisor};    
+    }
+    return dividend / divisor;    
 }
 
 // Test
